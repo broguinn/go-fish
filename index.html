@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Go Fish</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:700" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+		<noscript>
+ 			<link rel="stylesheet" href="css/skel-noscript.css">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/style-desktop.css">
+		</noscript>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo">
+					<div>
+						<h1><a href="#" id="logo">GO FISH</a></h1>
+						<span class="byline">- Who will win?</span>
+					</div>
+				</div>
+			</header>
+		<!-- /Header -->
+
+
+		
+		<!-- Banner -->
+			<div id="banner-wrapper">
+				<section id="banner">
+					<div id="player-scoreboard">
+            <div class="player-name"></div>
+            <div class="match-count"></div>
+            <div class="your-pairs"></div>
+            <div class="match-list"></div>
+					</div>
+					<div id="computer-scoreboard">
+            <div class="player-name"></div>
+            <div class="match-count"></div>
+            <div class="match-list"></div>
+					</div>
+
+					<form id="name-input">
+						<p>Enter your name.</p>
+						<input type="text" id="player-name"> </input>
+						<button type="submit">Submit. Please.</button>
+					</form>
+
+					<form id="player-turn">
+						<div id="computer-response"></div>
+						<span id="have-any">
+							<label for="ask">Do you have any...</label>
+							<select id="rank">
+							</select>
+							<button type="submit">Ask!</button>
+						</span>
+					</form>
+
+					<form id="computer-turn">
+						<span id="computer-wants"></span>
+						<button type="submit">Ok</button>
+					</form>
+
+					<div id="cards">
+						<span class="card unknown"></span>
+						<span class="card unknown"></span>
+						<span class="card unknown"></span>
+						<span class="card unknown"></span>
+						<span class="card unknown"></span>
+						<span class="card unknown"></span>
+						<span class="card unknown"></span>
+					</div>
+				</section>
+			</div>
+
+		<!-- /Banner -->
+
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+							
+
+
+	</body>
+</html>

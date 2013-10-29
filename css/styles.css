@@ -1,0 +1,210 @@
+select {
+  width: 80px;
+  font-size: 14px;
+  height: 20px;
+}
+
+#name-input {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#player-scoreboard {
+  float: left;
+  margin-left: 20px;
+}
+
+#computer-scoreboard {
+  float: right;
+  margin-right: 20px;
+}
+
+.player-name {
+  font-weight: bold;
+}
+
+#cards {
+  margin-top: 40px;
+}
+
+#player-turn {
+  display: none;
+}
+
+#computer-turn {
+  display: none;
+}
+
+#board {
+  overflow: hidden;
+  width: 340px;
+  height: 492px;
+}
+
+.card {
+  width: 65px;
+  height: 93px;
+  display: inline-block;
+  background-image: url('../images/cards.png');
+  margin: 5px;
+}
+.unknown {
+  background-position: -545px -1345px;
+}
+
+.sA {
+  background-position: -137px -1057px;
+}
+.s2 {
+  background-position: -69px -1057px;
+}
+.s3 {
+  background-position: -1px -1057px;
+}
+.s4 {
+  background-position: -69px -1153px;
+}
+.s5 {
+  background-position: -1px -1153px;
+}
+.s6 {
+  background-position: -681px -1057px;
+}
+.s7 {
+  background-position: -613px -1057px;
+}
+.s8 {
+  background-position: -545px -1057px;
+}
+.s9 {
+  background-position: -477px -1057px;
+}
+.s0 {
+  background-position: -409px -1057px;
+}
+.sJ {
+  background-position: -341px -1057px;
+}
+.sQ {
+  background-position: -273px -1057px;
+}
+.sK {
+  background-position: -205px -1057px;
+}
+.dA {
+  background-position: -273px -1153px;
+}
+.d2 {
+  background-position: -341px -1249px;
+}
+.d3 {
+  background-position: -273px -1249px;
+}
+.d4 {
+  background-position: -205px -1249px;
+}
+.d5 {
+  background-position: -137px -1249px;
+}
+.d6 {
+  background-position: -69px -1249px;
+}
+.d7 {
+  background-position: -1px -1249px;
+}
+.d8 {
+  background-position: -681px -1153px;
+}
+.d9 {
+  background-position: -613px -1153px;
+}
+.d0 {
+  background-position: -545px -1153px;
+}
+.dJ {
+  background-position: -477px -1153px;
+}
+.dQ {
+  background-position: -409px -1153px;
+}
+.dK {
+  background-position: -341px -1153px;
+}
+.hA {
+  background-position: -409px -1249px;
+}
+.h2 {
+  background-position: -477px -1345px;
+}
+.h3 {
+  background-position: -409px -1345px;
+}
+.h4 {
+  background-position: -341px -1345px;
+}
+.h5 {
+  background-position: -273px -1345px;
+}
+.h6 {
+  background-position: -205px -1345px;
+}
+.h7 {
+  background-position: -137px -1345px;
+}
+.h8 {
+  background-position: -69px -1345px;
+}
+.h9 {
+  background-position: -1px -1345px;
+}
+.h0 {
+  background-position: -681px -1249px;
+}
+.hJ {
+  background-position: -613px -1249px;
+}
+.hQ {
+  background-position: -545px -1249px;
+}
+.hK {
+  background-position: -477px -1249px;
+}
+.cA {
+  background-position: -1px -1px;
+}
+.c2 {
+  background-position: -69px -1057px;
+}
+.c3 {
+  background-position: -1px -1057px;
+}
+.c4 {
+  background-position: -681px -1px;
+}
+.c5 {
+  background-position: -613px -1px;
+}
+.c6 {
+  background-position: -545px -1px;
+}
+.c7 {
+  background-position: -477px -1px;
+}
+.c8 {
+  background-position: -409px -1px;
+}
+.c9 {
+  background-position: -341px -1px;
+}
+.c0 {
+  background-position: -273px -1px;
+}
+.cJ {
+  background-position: -205px -1px;
+}
+.cQ {
+  background-position: -137px -1px;
+}
+.cK {
+  background-position: -69px -1px;
+}
