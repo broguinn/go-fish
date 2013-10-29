@@ -63,14 +63,12 @@ var Player = {
   }
 }
 
-//var Computer
-
 var Deck = {
   cards : ['sA', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's0', 'sJ', 'sQ', 'sK',
          'dA', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd0', 'dJ', 'dQ', 'dK',
          'hA', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8', 'h9', 'h0', 'hJ', 'hQ', 'hK',
          'cA', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c0', 'cJ', 'cQ', 'cK'],
-  
+
   shuffle: function() {
     var unshuffled = this.cards.length, temporaryValue, randomIndex;
     while (unshuffled) {
@@ -220,14 +218,13 @@ $(function() {
     $('form#name-input').hide();
     $('#player-turn').show();
     game.startGame([playerName, 'Steve Foo']);
-   
+
     doYouHaveAny(game);
     displayCards(game);
     updateScoreboard();
 
     $('div#player-scoreboard div.player-name').empty().append(game.players[0].playerName);
     $('div#computer-scoreboard div.player-name').empty().append(game.players[1].playerName);
-
 
     return false;
   });
@@ -252,7 +249,7 @@ $(function() {
     $('span#have-any').hide();
     $('span#computer-wants').empty().append('Steve says, "' + computerResponse + ' Do you have any ' + rankNames[computerWants] + '?"');
     $('form#computer-turn').show();
-    
+
     return false;
   });
 
@@ -263,51 +260,7 @@ $(function() {
     $('span#have-any').show();
     $('form#computer-turn').hide();
     updateScoreboard();
-
     return false;
   });
-
   return false;
 });
-
-
-
-
-/*
-
-If you get a match after the cards are dealt, you get to go again:
-
-(need to fix - currentPlayer still automatically changes)
-
-
-var computerWants;
-  var computerResponse;
-  $('form#player-turn').submit(function() {
-    doYouHaveAny(game);
-    var rankWanted = $('select#rank').val();
-    game.playTurn(rankWanted);
-    displayCards(game);
-    updateScoreboard();
-
-    if (game.players[1].gaveCards) {
-      $('div#computer-response').empty().append('Steve says, "Yes."');
-      return false;
-    } else {
-      computerResponse = "Go fish!";
-      computerWants = game.players[1].randomCard();
-      $('div#computer-response').empty();
-      $('span#have-any').hide();
-      $('span#computer-wants').empty().append('Steve says, "' + computerResponse + ' Do you have any ' + rankNames[computerWants] + '?"');
-      $('form#computer-turn').show();
-      return false;
-    }
-
-    // computerWants = game.players[1].randomCard();
-    // $('span#have-any').hide();
-    // $('span#computer-wants').empty().append('Steve says, "' + computerResponse + ' Do you have any ' + rankNames[computerWants] + '?"');
-    // $('form#computer-turn').show();
-    
-    return false;
-  });
-*/
-
