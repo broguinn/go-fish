@@ -88,10 +88,6 @@ describe('Go Fish', function() {
     });
   });
 
-
-
-
-
   describe('Deck', function() {
     it('initiates a deck of 52 cards', function() {
       var deck = Object.create(Deck);
@@ -124,10 +120,6 @@ describe('Go Fish', function() {
     });
   });
 
-
-
-
-  
   describe('Game', function() {
     it('initiates a current player at 0', function() {
       var game = Object.create(Game);
@@ -280,7 +272,3 @@ describe('Go Fish', function() {
     });
   });
 });
-
-
-
-  

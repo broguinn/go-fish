@@ -16,7 +16,7 @@ var Player = {
     this.findPairs(cards);
   },
 
-  findPairs: function(cards) {  // make me beautiful
+  findPairs: function(cards) {
     var rank = cards[0].slice(-1);
     var matches = 0;
     for (var i = 0; i < this.hand.length; i++) {
@@ -65,9 +65,9 @@ var Player = {
 
 var Deck = {
   cards : ['sA', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's0', 'sJ', 'sQ', 'sK',
-         'dA', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd0', 'dJ', 'dQ', 'dK',
-         'hA', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8', 'h9', 'h0', 'hJ', 'hQ', 'hK',
-         'cA', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c0', 'cJ', 'cQ', 'cK'],
+           'dA', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd0', 'dJ', 'dQ', 'dK',
+           'hA', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8', 'h9', 'h0', 'hJ', 'hQ', 'hK',
+           'cA', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c0', 'cJ', 'cQ', 'cK'],
 
   shuffle: function() {
     var unshuffled = this.cards.length, temporaryValue, randomIndex;
@@ -129,7 +129,7 @@ var Game = {
     thisGame = this;
     var highest = 0;
     var index = 0;
-    thisGame.players.forEach(function(player){ //refactor with reduce
+    thisGame.players.forEach(function(player){
       if (player.pairCount > highest) {
         highest = player.pairCount;
         index = thisGame.players.indexOf(player);
